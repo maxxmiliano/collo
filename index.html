@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - Clínica Carolina Collo</title>
+  <link rel="stylesheet" href="/src/style.css">
+</head>
+
+<body>
+  <div class="container">
+    <!-- Seção da imagem de fundo -->
+    <div class="left"></div>
+
+    <!-- Seção de login -->
+    <div class="right">
+      <div class="login-card">
+        <img src="/imagem/ChatGPT Image 12 de nov. de 2025, 21_12_14.png" alt="Logo Clínica Carolina Collo"
+          class="logo">
+        <h2>Bem-vindo(a)</h2>
+        <p>Faça login para continuar</p>
+
+        <form>
+          <div class="input-group">
+            <label for="tipo">Tipo de usuário</label>
+            <select id="tipo" required>
+              <option value="">Selecione...</option>
+              <option value="gestor">Gestor</option>
+              <option value="supervisor">Supervisor</option>
+              <option value="terapeuta">Terapeuta</option>
+              <option value="analista">Analista</option>
+            </select>
+          </div>
+          <div class="input-group">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" placeholder="Digite seu e-mail" required>
+          </div>
+          <div class="input-group">
+            <label for="password">Senha</label>
+            <input type="password" id="password" placeholder="Digite sua senha" required>
+          </div>
+          <button type="submit">Entrar</button>
+        </form>
+
+        <a href="#" class="forgot">Esqueceu sua senha?</a>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
