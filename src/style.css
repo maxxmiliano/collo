@@ -22,7 +22,7 @@ body, html {
   flex: 1;
   background: url("../imagem/logomaior.png") no-repeat center center/cover;
   background-size: 70%;
-  background-position: 80% center; /* move um pouco para a direita */
+  background-position: 80% center;
 }
 
 /* Lado direito */
@@ -114,7 +114,7 @@ button:hover {
   text-decoration: underline;
 }
 
-
+/* Select */
 select {
   width: 100%;
   padding: 10px 12px;
@@ -135,6 +135,56 @@ select {
 select:focus {
   outline: none;
   border-color: #ba507b;
-  box-shadow: 0 0 4px #ba507b(191, 65, 93);
+  box-shadow: 0 0 4px #ba507b;
+}
+
+/* ------------------------------------------------------- */
+/*              🔥 RESPONSIVIDADE PARA CELULAR             */
+/* ------------------------------------------------------- */
+
+@media (max-width: 768px) {
+
+  .container {
+    flex-direction: column; /* vira coluna no celular */
+    height: auto;
+  }
+
+  .left {
+    height: 200px;
+    background-size: 50%;
+    background-position: center;
+  }
+
+  .right {
+    padding: 20px;
+  }
+
+  .login-card {
+    padding: 25px;
+    max-width: 90%;
+  }
+
+  .logo {
+    width: 90px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  p {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+
+  input, select {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  button {
+    font-size: 14px;
+    padding: 10px;
+  }
 }
 
