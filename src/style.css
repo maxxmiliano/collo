@@ -20,7 +20,7 @@ body, html {
 /* Lado esquerdo com imagem */
 .left {
   flex: 1;
-  background: url("../imagem/logomaior.png") no-repeat center center/cover;
+  background: url("/imagem/logomaior.png") no-repeat center center/cover;
   background-size: 70%;
   background-position: 80% center; /* move um pouco para a direita */
 }
